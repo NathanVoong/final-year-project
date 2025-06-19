@@ -10,7 +10,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/quiz/:quizId" element={<Quiz />} />
-                    <Route path="/resources" element={<Resources />} />
+                    <Route path="/cheese" element={<Resources />} />
                 </Routes>
             </div>
         </BrowserRouter>
