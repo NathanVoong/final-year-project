@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/Home/Home.tsx';
 import Quiz from './pages/Quiz';
 import Resources from './pages/Resources';
 

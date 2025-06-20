@@ -78,11 +78,6 @@ export default function Quiz() {
             setScore(prev => prev ?? 0);
             setCurrent(current + 1);
         }
-        // if (current + 1 < questions.length) {
-        //     setCurrent(current + 1);
-        // } else {
-        //     setScore(prev => prev ?? 0);
-        // }
     };
 
     if (!questions.length) return <p>Quiz not found or loading...</p>;
