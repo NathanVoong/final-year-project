@@ -1,23 +1,11 @@
 import { Card, CardContent, CardImage } from "./components/Card";
-import { Button } from "./components/Button";
 import { Badge } from "./components/Badge";
 import "./styles/Home.css";
 import meetingImage from "../../assets/meeting-image.jpg";
 
 export default function Home() {
     return (
-        <div className="app-container">
-            <header className="header">
-                <div className="header-top">
-                    <div className="logo">ClearScore</div>
-                    <nav className="nav-links">
-                        <Button variant="ghost" destination="/">Home</Button>
-                        <Button variant="ghost" destination="/resources">Resources</Button>
-                        <Button variant="ghost" destination="/quiz/1">Quizzes</Button>
-                    </nav>
-                    <div className="user-greeting">Hey Apprentice</div>
-                </div>
-            </header>
+        <div>
             <section className="section">
                 <h2>Onboarding</h2>
                 <Card>
