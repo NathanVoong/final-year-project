@@ -180,3 +180,21 @@
     font-weight: bold;
     color: white;
 }
+
+/* Card links */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link h3,
+.card-link p {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-link:hover {
+    text-decoration: none;
+}
+
