@@ -110,8 +110,16 @@
 .btn-ghost {
     background: transparent;
     color: white;
-    border: 1px solid transparent;
-    text-decoration: underline;
+    text-decoration: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 24px; /* pill shape */
+    transition: background-color 0.2s ease;
+}
+
+.btn-ghost:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* soft grey glow effect */
+    cursor: pointer;
 }
 
 /* Badge */
