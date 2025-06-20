@@ -17,10 +17,6 @@ export default function Home() {
                     </nav>
                     <div className="user-greeting">Hey Apprentice</div>
                 </div>
-                <div className="header-welcome">
-                    <h1>Welcome, <strong>Apprentice</strong></h1>
-                    <p className="countdown">659 days left until IC1</p>
-                </div>
             </header>
             <section className="section">
                 <h2>Onboarding</h2>

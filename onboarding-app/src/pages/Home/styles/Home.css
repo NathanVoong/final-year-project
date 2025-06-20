@@ -4,21 +4,28 @@
     background-color: #f5f7fa;
     color: #333;
     padding-bottom: 40px;
+    padding-top: 50px;
 }
 
 /* Header */
 .header {
-    background: linear-gradient(to bottom, #1e293b, #334155);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #1e293b, #334155); /* or your desired gradient */
     color: white;
-    padding: 24px;
-    text-align: center;
+    z-index: 1000;
+    padding: 16px 32px; /* adjust horizontal padding only */
+    box-sizing: border-box;
 }
 
 .header-top {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
 }
 
 .logo {
@@ -28,22 +35,11 @@
 
 .nav-links {
     display: flex;
-    gap: 12px;
+    gap: 16px;
 }
 
 .user-greeting {
     font-size: 14px;
-}
-
-.header-welcome h1 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.countdown {
-    margin-top: 8px;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 /* Section */
