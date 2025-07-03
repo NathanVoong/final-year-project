@@ -42,6 +42,18 @@
     font-size: 14px;
 }
 
+@media (max-width: 500px) {
+    .logo {
+        display: none;
+    }
+    .user-greeting {
+        display: none;
+    }
+    .header-top {
+        justify-content: center;
+    }
+}
+
 /* Section */
 .section {
     padding: 32px 24px;
