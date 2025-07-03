@@ -4,6 +4,13 @@ import Quiz from './pages/Quiz';
 import Resources from './pages/Resources';
 import {Button} from "./pages/Home/components/Button.tsx";
 import "./pages/Home/styles/Home.css";
+import SetupPage from "./pages/SetupPage/SetupPage.tsx";
+import FasterOktaPage from "./pages/FasterOktaPage/FasterOktaPage.tsx";
+import ClubsPage from "./pages/ClubsPage/ClubsPage.tsx";
+import FloorPlanPage from "./pages/FloorPlanPage/FloorPlanPage.tsx";
+import MoreSlackPage from "./pages/MoreSlackPage/MoreSlackPage.tsx";
+import FindRepoPage from "./pages/FindRepoPage/FindRepoPage.tsx";
+import CloneRepoPage from "./pages/CloneRepoPage/CloneRepoPage.tsx";
 
 export default function App() {
     return (
@@ -25,6 +32,13 @@ export default function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/quiz/:quizId" element={<Quiz />} />
                     <Route path="/resources" element={<Resources />} />
+                    <Route path="/setup" element={<SetupPage />} />
+                    <Route path="/okta-verification" element={<FasterOktaPage />} />
+                    <Route path="/clubs-and-communities" element={<ClubsPage />} />
+                    <Route path="/floor-plan" element={<FloorPlanPage />} />
+                    <Route path="/more-slack-channels" element={<MoreSlackPage />} />
+                    <Route path="/clone-repositories" element={<CloneRepoPage />} />
+                    <Route path="/find-repositories" element={<FindRepoPage />} />
                 </Routes>
             </div>
             </div>
