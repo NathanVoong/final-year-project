@@ -23,3 +23,50 @@
 .copy-button:focus {
     outline: none; /* Remove focus outline for better design */
 }
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px;
+}
+
+.next-button {
+    width: 100%;
+    padding: 18px 0;
+    background: linear-gradient(135deg, #1b3b41 0%, #284e5c 100%);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2em;
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(150, 202, 205, 0.64);
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    transition: background 0.2s;
+}
+
+.next-button:hover {
+    background: linear-gradient(135deg, #22444d 0%, #356070 100%);
+}
+
+.previous-button {
+    width: 100%;
+    padding: 18px 0;
+    background: #eaf8f8;
+    color: #2c5959;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 2px solid #2c5959;
+    border-radius: 2em;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(150, 202, 205, 0.64);
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    transition: background 0.2s, color 0.2s;
+}
+
+.previous-button:hover {
+    background: #d7efef;
+    color: #1b3b41;
+}

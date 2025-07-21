@@ -45,6 +45,10 @@ export default function SetupPage() {
                         {isCopied ? "Copied!" : "Copy"}
                     </button>
                 </div>
+                <div className="button-group">
+                    <button className="previous-button">Previous</button>
+                    <button className="next-button">Next</button>
+                </div>
             </section>
         </div>
     );
