@@ -249,6 +249,14 @@ npx -p ClearScore/fed-config berry`}
                         </ol>
                     </>
                 }
+                <div className="carousel-indicator">
+                    {[0, 1, 2, 3].map(idx => (
+                        <span
+                            key={idx}
+                            className={`carousel-dot${carouselSlide === idx ? " active" : ""}`}
+                        />
+                    ))}
+                </div>
                 <div className="button-group">
                     <button
                         className="previous-button"
