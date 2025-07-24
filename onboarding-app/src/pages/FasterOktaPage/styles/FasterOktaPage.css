@@ -16,3 +16,15 @@
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(20, 50, 60, 0.10);
 }
+
+@media (max-width: 480px) {
+    .okta-biometric {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    .okta-settings {
+        max-width: 100%;
+    }
+}
