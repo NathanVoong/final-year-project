@@ -217,7 +217,7 @@ npx -p ClearScore/fed-config berry`}
                                     <div className="img-wrapper">
                                         <img
                                             src={jFrogUsername}
-                                            alt='jFrog account menu showing "Edit Profile"'
+                                            alt='jFrog account menu highlighting the username'
                                             className="jfrog-image"
                                         />
                                     </div>
@@ -240,7 +240,7 @@ npx -p ClearScore/fed-config berry`}
                                     <div className="img-wrapper">
                                         <img
                                             src={jFrogPassword}
-                                            alt='jFrog account menu showing "Edit Profile"'
+                                            alt='API key with the copy button being highlighted'
                                             className="jfrog-password"
                                         />
                                     </div>

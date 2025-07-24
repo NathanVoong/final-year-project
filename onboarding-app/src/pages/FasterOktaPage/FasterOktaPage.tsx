@@ -17,7 +17,7 @@ export default function FasterOktaPage() {
                             <div className="img-wrapper">
                                 <img
                                     src={OktaSettings}
-                                    alt='jFrog account menu showing "Edit Profile"'
+                                    alt='Okta account menu showing "Settings"'
                                     className="okta-settings"
                                 />
                             </div>
@@ -30,7 +30,7 @@ export default function FasterOktaPage() {
                             <div className="img-wrapper">
                                 <img
                                     src={OktaBiometric}
-                                    alt='jFrog account menu showing "Edit Profile"'
+                                    alt='Okta security methods panel highlighting biometric authenticator"'
                                     className="okta-biometric"
                                 />
                             </div>
