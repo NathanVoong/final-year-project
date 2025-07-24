@@ -38,6 +38,10 @@ export default function SetupPage() {
         setCarouselSlide((prev) => Math.min(3, prev + 1)); // assuming 3 slides: 0, 1, 2
     };
 
+    React.useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [carouselSlide]);
+
     return (
         <div>
             <section className="section">
