@@ -1,70 +1,39 @@
-import {render, screen, fireEvent, waitFor} from "@testing-library/react";
-import SetupPage from "./SetupPage";
+import { render, screen } from "@testing-library/react";
+import FasterOktaPage from "./FasterOktaPage";
 
-jest.mock("../../assets/jFrogSetup.png", () => "jFrogSetup.png");
-jest.mock("../../assets/jFrogUsername.png", () => "jFrogUsername.png");
-jest.mock("../../assets/jFrogPassword.png", () => "jFrogPassword.png");
+// Mock images so they don't error in tests
+jest.mock("../../assets/OktaSettings.png", () => "OktaSettings.png");
+jest.mock("../../assets/OktaBiometric.png", () => "OktaBiometric.png");
 
-describe("SetupPage", () => {
-    beforeEach(() => {
-        // Mock clipboard API
-        Object.assign(navigator, {
-            clipboard: {
-                writeText: jest.fn(() => Promise.resolve())
-            }
-        });
-        // Mock scrollTo
-        window.scrollTo = jest.fn();
-    });
-
-    it("renders the first slide by default", () => {
-        render(<SetupPage/>);
-        expect(screen.getByText("Setting up your dev environment")).toBeInTheDocument();
-        expect(screen.getByText("Account access")).toBeInTheDocument();
-        expect(screen.getByText("Copy")).toBeInTheDocument();
-    });
-
-    it("navigates to next and previous slides", () => {
-        render(<SetupPage/>);
-        // Slide 0: Account access
+describe("FasterOktaPage", () => {
+    it("renders the heading and intro text", () => {
+        render(<FasterOktaPage />);
         expect(
-            screen.getByRole("heading", {level: 3, name: "Account access"})
+            screen.getByRole("heading", { level: 1, name: /Setting up faster Okta verification/i })
         ).toBeInTheDocument();
-        // Next to Slide 1: Software
-        fireEvent.click(screen.getByRole("button", { name: "Next" }));
         expect(
-            screen.getByRole("heading", {level: 3, name: "Software"})
-        ).toBeInTheDocument();
-        // Next to Slide 2: jFrog setup
-        fireEvent.click(screen.getByRole("button", { name: "Next" }));
-        expect(
-            screen.getByRole("heading", {level: 3, name: "jFrog setup"})
-        ).toBeInTheDocument();
-        // Next to Slide 3: .npmrc + .yarnrc.yml setup
-        fireEvent.click(screen.getByRole("button", { name: "Next" }));
-        expect(
-            screen.getByRole("heading", {level: 3, name: ".npmrc + .yarnrc.yml setup"})
-        ).toBeInTheDocument();
-        // Go back to to Slide 2: jFrog setup
-        fireEvent.click(screen.getByRole("button", { name: "Previous" }));
-        expect(
-            screen.getByRole("heading", {level: 3, name: "jFrog setup"})
+            screen.getByText(/how to setup faster Okta fingerprint verification/i)
         ).toBeInTheDocument();
     });
 
-    it("calls window.scrollTo on slide change", () => {
-        render(<SetupPage/>);
-        fireEvent.click(screen.getByRole("button", { name: "Next" }));
-        expect(window.scrollTo).toHaveBeenCalledWith({top: 0, behavior: "smooth"});
+    it("renders all instructional steps", () => {
+        render(<FasterOktaPage />);
+        expect(
+            screen.getByText(/click on your name at the top-left and click on Settings/i)
+        ).toBeInTheDocument();
+        expect(
+            screen.getByText(/Security Methods/i)
+        ).toBeInTheDocument();
+        expect(
+            screen.getByText(/instead of needing to authenticate Okta through your phone/i)
+        ).toBeInTheDocument();
     });
 
-    it("copies the code when Copy button is clicked", async () => {
-        render(<SetupPage/>);
-        const copyButton = screen.getByText("Copy");
-        fireEvent.click(copyButton);
-        expect(navigator.clipboard.writeText).toHaveBeenCalled();
-        await waitFor(() => {
-            expect(screen.getByText("Copied!")).toBeInTheDocument();
-        });
+    it("has a link to Okta homepage that opens in a new tab", () => {
+        render(<FasterOktaPage />);
+        const link = screen.getByRole("link", { name: /Okta homepage/i });
+        expect(link).toHaveAttribute("href", "https://clearscore.okta-emea.com/app/UserHome");
+        expect(link).toHaveAttribute("target", "_blank");
+        expect(link).toHaveAttribute("rel", expect.stringContaining("noopener"));
     });
 });
