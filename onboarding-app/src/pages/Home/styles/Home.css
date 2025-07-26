@@ -162,6 +162,7 @@
 
 /* Image card */
 .image-card {
+    min-width: 216px;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
