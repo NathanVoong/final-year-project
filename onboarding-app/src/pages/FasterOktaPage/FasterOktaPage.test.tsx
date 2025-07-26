@@ -2,8 +2,8 @@ import { render, screen } from "@testing-library/react";
 import FasterOktaPage from "./FasterOktaPage";
 
 // Mock images so they don't error in tests
-jest.mock("../../assets/OktaSettings.png", () => "OktaSettings.png");
-jest.mock("../../assets/OktaBiometric.png", () => "OktaBiometric.png");
+jest.mock("./assets/OktaSettings.png", () => "OktaSettings.png");
+jest.mock("./assets/OktaBiometric.png", () => "OktaBiometric.png");
 
 describe("FasterOktaPage", () => {
     it("renders the heading and intro text", () => {

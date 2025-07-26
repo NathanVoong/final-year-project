@@ -1,6 +1,6 @@
 import "./styles/FasterOktaPage.css";
-import OktaSettings from "../../assets/OktaSettings.png";
-import OktaBiometric from "../../assets/OktaBiometric.png";
+import OktaSettings from "./assets/OktaSettings.png";
+import OktaBiometric from "./assets/OktaBiometric.png";
 
 export default function FasterOktaPage() {
     return (

@@ -1,9 +1,9 @@
 import {render, screen, fireEvent, waitFor} from "@testing-library/react";
 import SetupPage from "./SetupPage";
 
-jest.mock("../../assets/jFrogSetup.png", () => "jFrogSetup.png");
-jest.mock("../../assets/jFrogUsername.png", () => "jFrogUsername.png");
-jest.mock("../../assets/jFrogPassword.png", () => "jFrogPassword.png");
+jest.mock("./assets/jFrogSetup.png", () => "jFrogSetup.png");
+jest.mock("./assets/jFrogUsername.png", () => "jFrogUsername.png");
+jest.mock("./assets/jFrogPassword.png", () => "jFrogPassword.png");
 
 describe("SetupPage", () => {
     beforeEach(() => {

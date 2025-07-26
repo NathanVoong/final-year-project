@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles/SetupPage.css";
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-import jFrogImage from "../../assets/jFrogSetup.png";
-import jFrogUsername from "../../assets/jFrogUsername.png";
-import jFrogPassword from "../../assets/jFrogPassword.png";
+import jFrogImage from "./assets/jFrogSetup.png";
+import jFrogUsername from "./assets/jFrogUsername.png";
+import jFrogPassword from "./assets/jFrogPassword.png";
 
 export default function SetupPage() {
     const [isCopied, setIsCopied] = React.useState(false);

@@ -1,7 +1,7 @@
 import { Card, CardContent, CardImage } from "./components/Card";
 import { Badge } from "./components/Badge";
 import "./styles/Home.css";
-import meetingImage from "../../assets/meeting-image.jpg";
+import meetingImage from "./assets/meeting-image.jpg";
 
 export default function Home() {
     return (
