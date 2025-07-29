@@ -94,7 +94,6 @@ const config: Config = {
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': '<rootDir>/mocks/styleMock.ts',
-    '\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/mocks/fileMock.ts'
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

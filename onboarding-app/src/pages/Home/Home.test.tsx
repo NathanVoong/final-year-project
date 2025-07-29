@@ -2,6 +2,8 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Home from "./Home";
 
+jest.mock("./assets/meeting-image.jpg", () => "meeting-image.jpg");
+
 describe("Home component", () => {
     it("renders the onboarding section", () => {
         render(
