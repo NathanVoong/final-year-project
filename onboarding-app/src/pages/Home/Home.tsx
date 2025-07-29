@@ -49,7 +49,7 @@ export default function Home() {
                 <div className="grid">
                     {[
                         {
-                            title: "How to add more slack channels",
+                            title: "How to find/add more slack channels",
                             description: "Find interesting or helpful channels",
                             destination: "/more-slack-channels"
                         },
