@@ -2,3 +2,19 @@
 .section {
     padding: 32px 24px;
 }
+
+.clubs-image-card {
+    min-width: 216px;
+    max-width: 216px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.row-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
