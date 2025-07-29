@@ -37,7 +37,7 @@ describe("Home component", () => {
         );
 
         expect(screen.getByText("How to find/add more slack channels")).toBeInTheDocument();
-        expect(screen.getByText("How to clone GitHub repositories")).toBeInTheDocument();
-        expect(screen.getByText("How to find GitHub repositories")).toBeInTheDocument();
+        expect(screen.getByText("How to find & clone GitHub repositories")).toBeInTheDocument();
+        expect(screen.getByText("ClearScore Git Cheatsheet")).toBeInTheDocument();
     });
 });

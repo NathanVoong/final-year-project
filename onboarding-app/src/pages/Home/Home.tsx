@@ -54,13 +54,13 @@ export default function Home() {
                             destination: "/more-slack-channels"
                         },
                         {
-                            title: "How to clone GitHub repositories",
-                            description: "Copy GitHub projects locally",
+                            title: "How to find & clone GitHub repositories",
+                            description: "Find & copy GitHub projects locally",
                             destination: "/clone-repositories"
                         },
                         {
-                            title: "How to find GitHub repositories",
-                            description: "Find other ClearScore projects",
+                            title: "ClearScore Git Cheatsheet",
+                            description: "The only Git commands you'll ever need",
                             destination: "/find-repositories"
                         }
                     ].map((guide, i) => (

@@ -9,8 +9,8 @@ import FasterOktaPage from "./pages/FasterOktaPage/FasterOktaPage.tsx";
 import ClubsPage from "./pages/ClubsPage/ClubsPage.tsx";
 import FloorPlanPage from "./pages/FloorPlanPage/FloorPlanPage.tsx";
 import MoreSlackPage from "./pages/MoreSlackPage/MoreSlackPage.tsx";
-import FindRepoPage from "./pages/FindRepoPage/FindRepoPage.tsx";
-import CloneRepoPage from "./pages/CloneRepoPage/CloneRepoPage.tsx";
+import GitCheatsheetPage from "./pages/GitCheatsheetPage/GitCheatsheetPage.tsx";
+import GithubPage from "./pages/GitHubPage/GithubPage.tsx";
 
 export default function App() {
     return (
@@ -37,8 +37,8 @@ export default function App() {
                     <Route path="/clubs-and-communities" element={<ClubsPage />} />
                     <Route path="/floor-plan" element={<FloorPlanPage />} />
                     <Route path="/more-slack-channels" element={<MoreSlackPage />} />
-                    <Route path="/clone-repositories" element={<CloneRepoPage />} />
-                    <Route path="/find-repositories" element={<FindRepoPage />} />
+                    <Route path="/github" element={<GithubPage />} />
+                    <Route path="/git-commands" element={<GitCheatsheetPage />} />
                 </Routes>
             </div>
             </div>
