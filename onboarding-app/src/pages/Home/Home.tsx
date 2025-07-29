@@ -56,12 +56,12 @@ export default function Home() {
                         {
                             title: "How to find & clone GitHub repositories",
                             description: "Find & copy GitHub projects locally",
-                            destination: "/clone-repositories"
+                            destination: "/github"
                         },
                         {
                             title: "ClearScore Git Cheatsheet",
                             description: "The only Git commands you'll ever need",
-                            destination: "/find-repositories"
+                            destination: "/git-commands"
                         }
                     ].map((guide, i) => (
                         <Card key={i} destination={guide.destination}>
