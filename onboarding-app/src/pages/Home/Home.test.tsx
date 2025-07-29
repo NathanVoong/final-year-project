@@ -13,9 +13,9 @@ describe("Home component", () => {
         );
 
         // Headings
-        expect(screen.getByText(/Onboarding/i)).toBeInTheDocument();
-        expect(screen.getByText(/Setting up your dev environment/i)).toBeInTheDocument();
-        expect(screen.getByText(/Set up your environment to start your journey/i)).toBeInTheDocument();
+        expect(screen.getByText("Onboarding")).toBeInTheDocument();
+        expect(screen.getByText("Setting up your dev environment")).toBeInTheDocument();
+        expect(screen.getByText("Set up your environment to start your journey at ClearScore")).toBeInTheDocument();
     });
 
     it("renders the floor plan card", () => {
@@ -25,8 +25,8 @@ describe("Home component", () => {
             </MemoryRouter>
         );
 
-        expect(screen.getByText(/Floor plan and meeting rooms/i)).toBeInTheDocument();
-        expect(screen.getByText(/Floor plans for the London office/i)).toBeInTheDocument();
+        expect(screen.getByText("Floor plan and meeting rooms")).toBeInTheDocument();
+        expect(screen.getByText("Floor plans for the London office")).toBeInTheDocument();
     });
 
     it("renders all useful guides", () => {
@@ -36,8 +36,8 @@ describe("Home component", () => {
             </MemoryRouter>
         );
 
-        expect(screen.getByText(/How to add more slack channels/i)).toBeInTheDocument();
-        expect(screen.getByText(/How to clone GitHub repositories/i)).toBeInTheDocument();
-        expect(screen.getByText(/How to find GitHub repositories/i)).toBeInTheDocument();
+        expect(screen.getByText("How to find/add more slack channels")).toBeInTheDocument();
+        expect(screen.getByText("How to clone GitHub repositories")).toBeInTheDocument();
+        expect(screen.getByText("How to find GitHub repositories")).toBeInTheDocument();
     });
 });
