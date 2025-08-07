@@ -12,6 +12,7 @@ export default function GitCheatsheetPage() {
         <div>
             <section className="section">
                 <h1>ClearScore Git Cheatsheet</h1>
+                <p>These are the most used git commands you’ll probably ever use during your time at ClearScore</p>
                 <h3>Create and checkout into new branch</h3>
                 <SyntaxHighlighter language="bash">
                     {`git checkout -b <new_branch_name>`}
