@@ -3,9 +3,8 @@ import findRepoOne from "./assets/findRepoOne.png";
 import findRepoTwo from "./assets/findRepoTwo.png";
 import cloneRepoOne from "./assets/cloneRepoOne.png";
 import cloneRepoTwo from "./assets/cloneRepoTwo.png";
-import React from "react";
 
-export default function GithubPage() {
+export default function GitHubPage() {
     return (
         <div>
             <section className="section">
