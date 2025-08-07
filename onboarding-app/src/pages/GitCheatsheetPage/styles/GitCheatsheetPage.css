@@ -4,7 +4,7 @@
 }
 
 .section h3 {
-    margin-top: 50px; /* or increase to 24px or more for extra spacing */
+    margin-top: 2.5em;
 }
 
 .subtext {
@@ -15,7 +15,6 @@
 
 .git-status-image {
     max-width: 600px;
-    margin-top: 16px;
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(20, 50, 60, 0.10);
 }
