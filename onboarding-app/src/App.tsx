@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home.tsx';
-import Quiz from './pages/Quiz';
+import Quiz from './pages/FloorPlanPage/Quiz.tsx';
 import Resources from './pages/Resources';
 import {Button} from "./pages/Home/components/Button.tsx";
 import "./pages/Home/styles/Home.css";
