@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home.tsx';
-import Quiz from './pages/FloorPlanPage/Quiz.tsx';
+import FloorPlanQuiz from './pages/FloorPlanPage/FloorPlanQuiz.tsx';
 import Resources from './pages/Resources';
 import {Button} from "./pages/Home/components/Button.tsx";
 import "./pages/Home/styles/Home.css";
@@ -30,7 +30,7 @@ export default function App() {
             <div className="container">
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/quiz/:quizId" element={<Quiz />} />
+                    <Route path="/quiz/:quizId" element={<FloorPlanQuiz />} />
                     <Route path="/resources" element={<Resources />} />
                     <Route path="/setup" element={<SetupPage />} />
                     <Route path="/okta-verification" element={<FasterOktaPage />} />

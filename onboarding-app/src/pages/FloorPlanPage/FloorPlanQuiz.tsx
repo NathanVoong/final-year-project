@@ -153,7 +153,7 @@ const QUIZ_DATA: Record<string, Question[]> = {
     ],
 };
 
-export default function Quiz() {
+export default function FloorPlanQuiz() {
     const { quizId } = useParams();
     const [questions, setQuestions] = useState<Question[]>([]);
     const [current, setCurrent] = useState(0);
