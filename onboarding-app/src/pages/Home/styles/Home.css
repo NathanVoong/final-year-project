@@ -212,3 +212,88 @@
     text-decoration: none;
 }
 
+.welcome-container {
+    position: relative;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    max-height: 275px;
+    overflow: hidden;
+}
+
+.welcome-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* scales image to fill container */
+    z-index: 0; /* places image behind content */
+}
+
+.welcome-elements-container {
+    max-width: 960px;
+    margin: 2.5rem auto 1rem auto;
+    padding: 1rem;
+    min-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .welcome-elements-container {
+        min-width: 760px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+.welcome-text {
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    z-index: 1;
+}
+
+.countdown-circle {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.1);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.days {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.home-welcome-text {
+    color: white;
+    font-size: 1rem;
+}
+
+.apprentice-text {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}

@@ -1,5 +1,5 @@
-import { Card, CardContent, CardImage } from "./components/Card";
-import { Badge } from "./components/Badge";
+import {Card, CardContent, CardImage} from "./components/Card";
+import {Badge} from "./components/Badge";
 import "./styles/Home.css";
 import meetingImage from "./assets/meeting-image.jpg";
 
@@ -35,7 +35,7 @@ export default function Home() {
                 <p>Floor plans and meeting room locations</p>
                 <CardImage destination="/floor-plan">
                     <div className="image-card">
-                        <img src={meetingImage} alt="Meeting room" className="image-background" />
+                        <img src={meetingImage} alt="Meeting room" className="image-background"/>
                         <div className="image-content">
                             <Badge variant="secondary">Useful</Badge>
                             <h3 className="h3Bright">Floor plan and meeting rooms</h3>
