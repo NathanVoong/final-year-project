@@ -188,16 +188,15 @@ export default function FloorPlanQuiz() {
         <div className="quiz">
             <img src={q.image} className="quiz-image"/>
             <h2>{q.question_text}</h2>
-            <ul>
+            <ul className="quiz-options-grid">
                 {q.answers.map((a) => (
                     <li key={a.id}>
-                        <button onClick={() => handleAnswer(a.id)}>{a.answer_text}</button>
+                        <button className="quiz-option" onClick={() => handleAnswer(a.id)}>
+                            {a.answer_text}
+                        </button>
                     </li>
                 ))}
             </ul>
-            <h3>Score: {score ?? 0}</h3>
-            <h3>Current: {current ?? 0}</h3>
-            <h3>questions length: {questions.length ?? 0}</h3>
         </div>
     );
 }

@@ -41,7 +41,8 @@ function Layout() {
                     <div className="logo">ClearScore</div>
                     <nav className="nav-links">
                         <Button variant="ghost" destination="/">Home</Button>
-                        <Button variant="ghost" destination="/resources">Resources</Button>
+                        {/*Temporarily removed until more resources are added*/}
+                        {/*<Button variant="ghost" destination="/resources">Resources</Button>*/}
                         <Button variant="ghost" destination="/quiz/1">Quizzes</Button>
                     </nav>
                     <div className="user-greeting">Hey Apprentice</div>
